@@ -1,0 +1,260 @@
+body {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: #ffffff;
+}
+
+/* Effect */
+.aurora-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(45deg, #e74c3c, #3498db, #2ecc71, #f39c12, #e74c3c);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: aurora 8s ease-in-out infinite;
+}
+
+@keyframes aurora {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/* typing effect */
+.typing-text {
+    font-size: 24px;
+    font-family: monospace;
+    color: #333;
+}
+
+#cursor {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* snow effect */
+/* 
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.dot-container {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3498db;
+    pointer-events: none;
+    animation: moveDot 5s linear infinite, changeColor 10s linear infinite alternate;
+    -webkit-animation: moveDot 5s linear infinite, changeColor 10s linear infinite alternate;
+}
+
+@keyframes moveDot {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(100vw, 100vh);
+    }
+}
+
+@keyframes changeColor {
+
+    0%,
+    100% {
+        background-color: #3498db;
+    }
+
+    50% {
+        background-color: #e74c3c;
+    }
+} */
+
+/* Blink effect */
+
+.blink-text {
+    font-size: 15px;
+    color: #333;
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(3, 2, 2);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.box {
+    padding: 30px;
+}
+
+#text {
+    text-align: justify;
+    padding: 20px;
+}
+
+li {
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+.c-img {
+    width: 100px;
+    /* aspect-ratio: 3/2; */
+    object-fit: contain;
+    /* mix-blend-mode: color-dodge; */
+}
+
+.c-img-1 {
+    min-width: 150px;
+    /* aspect-ratio: 3/2; */
+    object-fit: contain;
+    /* mix-blend-mode: color-dodge; */
+}
+.c-img-2 {
+    min-width: 50px;
+    /* aspect-ratio: 3/2; */
+    object-fit: contain;
+    /* mix-blend-mode: color-dodge; */
+}
+
+.card {
+    min-height: 150px;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.card2 {
+    /* min-height: 50px; */
+    transition: transform .2s;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.card2:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/* Zoom effect */
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+    /*(150%zoom-Note: if the zoom is too large, it will go outside of the viewport) */
+    ;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/* smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* custome-application section hover */
+.c-hv:hover {
+    transform: scale(1.05);
+    color: rgb(38, 45, 98);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+#contact{
+    text-decoration: none;
+    margin-right: 20px;
+}
+#contact:link{
+    color: #010101;
+}
+#contact:visited{
+    color: #010101;
+}
+#contact:hover{
+    color: #5e5e5e;
+}
