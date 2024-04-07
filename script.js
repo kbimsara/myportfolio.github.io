@@ -47,16 +47,16 @@ function typeText() {
 typeText();
 
 // Dote effect
-const dotsContainer = document.querySelector('.dots-container');
-const numDots = 30;
+// const dotsContainer = document.querySelector('.dots-container');
+// const numDots = 30;
 
-for (let i = 0; i < numDots; i++) {
-    const dot = document.createElement('div');
-    dot.className = 'dot';
-    dot.style.left = `${Math.random() * 100}vw`;
-    dot.style.top = `${Math.random() * 100}vh`;
-    dot.style.transform = `scale(${Math.random()})`;
-    dot.style.animationDuration = `${Math.random() * 5 + 3}s`;
-    dotsContainer.appendChild(dot);
-}
+// for (let i = 0; i < numDots; i++) {
+//     const dot = document.createElement('div');
+//     dot.className = 'dot';
+//     dot.style.left = `${Math.random() * 100}vw`;
+//     dot.style.top = `${Math.random() * 100}vh`;
+//     dot.style.transform = `scale(${Math.random()})`;
+//     dot.style.animationDuration = `${Math.random() * 5 + 3}s`;
+//     dotsContainer.appendChild(dot);
+// }
 
